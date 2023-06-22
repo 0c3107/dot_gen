@@ -1,5 +1,5 @@
 [package]
-name = "island_gen"
+name = "dot_gen"
 version = "0.1.0"
 edition = "2021"
 
