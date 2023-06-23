@@ -1,6 +1,6 @@
 use rand::prelude::*;
-const POPULATION_CHANCE: f32 = 0.1;
-const SIZE: usize = 10_000;
+const POPULATION_CHANCE: f32 = 0.05;
+const SIZE: usize = 100_000;
 
 fn main() {
     let world = vec![vec![false; SIZE]; SIZE];
