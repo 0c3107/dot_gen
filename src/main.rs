@@ -1,10 +1,11 @@
 use rand::prelude::*;
-const POPULATION_CHANCE: f32 = 0.05;
-const SIZE: usize = 100_000;
+const POPULATION_CHANCE: f32 = 0.01; // NOTE: Not a percentage chance. Just increase for more, vice versa.
+const SIZE: usize = 100;
 
 fn main() {
     let world = vec![vec![false; SIZE]; SIZE];
     let mut world = populate_world(world);
+    print_world_to_console(&world);
 }
 
 fn print_world_to_console(world: &Vec<Vec<bool>>) {
